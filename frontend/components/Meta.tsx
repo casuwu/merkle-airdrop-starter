@@ -1,10 +1,10 @@
 import Head from "next/head"; // HTML Head
 
 // Setup project details
-const url: string = process.env.NEXT_PUBLIC_URL ?? "https://token.com/";
-const tokenName: string = process.env.NEXT_PUBLIC_TOKEN_NAME ?? "Token Name";
+const url: string = process.env.NEXT_PUBLIC_URL ?? "https://concave.lol/";
+const tokenName: string = process.env.NEXT_PUBLIC_TOKEN_NAME ?? "pCNV";
 const description: string =
-  process.env.NEXT_PUBLIC_DESCRIPTION ?? "Some description";
+  process.env.NEXT_PUBLIC_DESCRIPTION ?? "Spoon sale";
 
 export default function Meta() {
   return (

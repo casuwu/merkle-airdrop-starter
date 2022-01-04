@@ -3,7 +3,7 @@ import { useState } from "react"; // State management
 import { token } from "state/token"; // Global state: Tokens
 import Layout from "components/Layout"; // Layout wrapper
 import styles from "styles/pages/Claim.module.scss"; // Page styles
-
+console.log(token);
 export default function Claim() {
   // Global ETH state
   const { address, unlock }: { address: string | null; unlock: Function } =
@@ -20,6 +20,7 @@ export default function Claim() {
     alreadyClaimed: boolean;
     claimAirdrop: Function;
   } = token.useContainer();
+  console.log(numTokens)
   // Local button loading
   const [buttonLoading, setButtonLoading] = useState<boolean>(false);
 

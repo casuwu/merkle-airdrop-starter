@@ -72,7 +72,7 @@ export default function Header() {
         {/* Actions button */}
         <button onClick={() => setMenuOpen((previous) => !previous)}>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={threeDotsImage} alt="settings" />
+          {/* <img src={threeDotsImage} alt="settings" /> */}
         </button>
       </div>
 

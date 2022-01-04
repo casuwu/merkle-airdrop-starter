@@ -6,15 +6,15 @@ import styles from "styles/pages/Home.module.scss"; // Page styles
 
 // Setup project details
 const tokenName: string = process.env.NEXT_PUBLIC_TOKEN_NAME ?? "Token Name";
-const heading: string = process.env.NEXT_PUBLIC_HEADING ?? "Some heading";
-const description: string =
-  process.env.NEXT_PUBLIC_DESCRIPTION ?? "Some description";
+const heading: string = "";
+const description: string = "";
 
 export default function Home() {
   // Routing
   const { push } = useRouter();
   // Authentication status
   const { address }: { address: string | null } = eth.useContainer();
+  console.log(address)
 
   return (
     <Layout>
@@ -48,7 +48,7 @@ export default function Home() {
           <button disabled>Connect Wallet to Claim Tokens</button>
         ) : (
           // Else, reroute to /claim
-          <button onClick={() => push("/claim")}>Claim Tokens</button>
+          <button onClick={() => push("/claim")}>Seed Details</button>
         )}
       </div>
     </Layout>
