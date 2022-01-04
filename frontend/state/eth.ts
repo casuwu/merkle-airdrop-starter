@@ -25,7 +25,7 @@ const wallets: (WalletModule | WalletInitOptions)[] = [
     walletName: "walletConnect",
     networkId,
     rpc: {
-      [networkId]: process.env.NEXT_PUBLIC_RPC_URL ?? "",
+      [networkId]: process.env.NEXT_PUBLIC_RPC_URL ?? "https://mainnet.infura.io/v3/4c23e1f964e640b99b40dec60ec1fbe6",
     },
   },
 ];

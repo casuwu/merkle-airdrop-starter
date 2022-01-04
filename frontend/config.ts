@@ -10,6 +10,7 @@ const config: IConfig = {
   airdrop: {
     "0x016C8780e5ccB32E5CAA342a926794cE64d9C364": 10,
     "0x109f93893af4c4b0afc7a9e97b59991260f98313": 100,
+    "0x09E6f1BCb006925B9390cf72c07544018145DC25": 100
   },
 };
 
